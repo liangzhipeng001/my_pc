@@ -1,0 +1,31 @@
+body, html, div, dl, dt, dd, ul,
+li, ol, h1, h2, h3, h4, h5, h6, form,
+fieldset, input, textarea, p, th, td, a, img, span {
+margin: 0;
+padding: 0;
+font-size: 12px;
+font-family:"微软雅黑";
+}
+h1, h2, h3, h4, h5, h6{ font-size:12px; font-weight:normal }
+ol, ul, li, dl, dd, dt{ list-style:none }
+img{ vertical-align:middle; border:0 }
+i,em, b{ font-style:normal; font-weight:normal }
+a{ text-decoration:none; color:#fff}
+.clear:after{
+visibility:hidden;
+display:block;
+font-size:0;
+content:" ";
+clear:both;
+height:0;
+}
+.fr{
+float:right;
+}
+.fl{
+float:left;
+}
+
+input{
+outline:none;
+}

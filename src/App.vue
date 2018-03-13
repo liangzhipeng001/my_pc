@@ -1,15 +1,22 @@
 <template>
   <div id="app">
+    <Banner-view></Banner-view>
+    
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Banner from "@/components/Banner.vue";
+
 export default {
-  name: 'App'
-}
+  components: {
+    "Banner-view": Banner
+  }
+};
 </script>
 
 <style>
+
 
 </style>
