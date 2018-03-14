@@ -2,13 +2,13 @@
     <div class="wrap">
         <div class="left_js"></div>
         <div class="content">
-            <p class="animated bounceInDown hel"  swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">HELLO!!</p>
-            <div class="title animated bounceInDown"  swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1s">Welcome to my <p><span class="clo">P</span>ersonal <span class="clo">WEB</span>site</p></div>
-            <nav class="list animated bounceInDown" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+            <p class="animated bounceInDown hel one"  swiper-animate-effect="bounceInDown" >HELLO!!</p>
+            <div class="title animated bounceInDown two"  swiper-animate-effect="bounceInDown" >Welcome to my <p><span class="clo">P</span>ersonal <span class="clo">WEB</span>site</p></div>
+            <nav class="list animated bounceInDown three" swiper-animate-effect="bounceInDown" >
                 <router-link class="item" v-for="(item , index) in listTab" :key="index"
                 :to="item.path">{{item.item}}</router-link>
             </nav>
-            <div class="log animated bounceInDown"  swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+            <div class="log animated bounceInDown four"  swiper-animate-effect="bounceInDown" >
                 <img src="../../static/images/log.png" width="134" height="110" alt="logo">
             </div>
         </div>
@@ -21,10 +21,10 @@ export default {
   data() {
     return {
       listTab: [
-        { item: "HOME" ,path:"/home"},
-        { item: "ABOUT ME" ,path:"/about"},
-        { item: "PRODUCT" ,path:"/product"},
-        { item: "CANTACT ME" ,path:"/contact"}
+        { item: "HOME", path: "/home" },
+        { item: "ABOUT ME", path: "/about" },
+        { item: "PRODUCT", path: "/product" },
+        { item: "CANTACT ME", path: "/contact" }
       ]
     };
   }
@@ -110,12 +110,36 @@ export default {
 .wrap .content .list a:hover {
   border: 2px solid #f0ff00;
   color: #f0ff00;
-  border-radius: 2vw
+  border-radius: 2vw;
 }
-.log{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+.log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.one {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.two {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+.three {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+.four {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
 }
 </style>
