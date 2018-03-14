@@ -9,11 +9,6 @@ Vue.use(Router)
 
 export default new Router({
   routes: [{
-      path: '/',
-      name: 'Start',
-      component: resolve => require(['@/pages/Start.vue'], resolve)
-    },
-    {
       path: "/home",
       component: resolve => require(['@/pages/Home.vue'], resolve)
     },
@@ -28,6 +23,10 @@ export default new Router({
     {
       path: "/contact",
       component: resolve => require(['@/pages/Contact.vue'], resolve)
+    },
+    {
+      path:"*",
+      redirect:"/home"
     }
   ]
 })
