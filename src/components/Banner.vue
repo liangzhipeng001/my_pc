@@ -3,7 +3,7 @@
       <div class="swiper-container banner">
       <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(item,index) in lbt" :key="index">
-              <div class="bg" :style="{backgroundImage: 'url(' + item.img + ')'}" ></div>
+              <div class="bg" :style="{backgroundImage:item.img }" ></div>
           </div>
       </div>
     </div>
@@ -16,10 +16,10 @@ export default {
   data() {
     return {
       lbt: [
-        { img: "../../static/images/bg.png" },
-        { img: "../../static/images/bg1.png" },
-        { img: "../../static/images/bg2.png" },
-        { img: "../../static/images/bg3.png" }
+        { img: 'url(' + require('../../static/images/bg.png') + ')'},
+        { img: 'url(' + require('../../static/images/bg1.png') + ')' },
+        { img: 'url(' + require('../../static/images/bg2.png') + ')'},
+        { img: 'url(' + require('../../static/images/bg3.png') + ')' }
       ]
     };
   },
@@ -55,7 +55,7 @@ export default {
   width: 100%;
   bottom: 0;
   top: 0;
-  background: rgba(000, 000, 000, 0.5);
+  background: rgba(000, 000, 000, 0.4);
   z-index: 100;
 }
 .bg-wrap {

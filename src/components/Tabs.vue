@@ -29,7 +29,7 @@
 .nav_wrap {
   position: absolute;
   width: 100%;
-  z-index: 102;
+  z-index: 105;
   top: 0;
   left: 0;
   display: flex;

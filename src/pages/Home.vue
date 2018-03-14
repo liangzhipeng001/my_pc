@@ -1,6 +1,6 @@
 <template>
     <div class="wrap">
-        <div class="left_js"></div>
+        <div class="left_js animated fadeInLeft" swiper-animate-effect="fadeInLeft"></div>
         <div class="content">
             <p class="animated lightSpeedIn hel one"  swiper-animate-effect="lightSpeedIn" >HELLO!!</p>
             <div class="title animated lightSpeedIn two"  swiper-animate-effect="lightSpeedIn" >Welcome to my <p><span class="clo">P</span>ersonal <span class="clo">WEB</span>site</p></div>
@@ -12,7 +12,7 @@
                 <img src="../../static/images/log.png" width="134" height="110" alt="logo">
             </div>
         </div>
-        <div class="right_sj"></div>
+        <div class="right_sj fadeInRight animated" swiper-animate-effect="fadeInRight"></div>
     </div>
 </template>
 
@@ -147,4 +147,5 @@ export default {
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
 }
+
 </style>
